@@ -1,0 +1,25 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 2em;
+}
+
+.List{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.Item{
+    margin-right: 1em;
+}
+
+.Item a{
+    text-decoration: none;
+    color: snow;
+}
+
+.Item a:hover{
+    color: #ffbb33;
+}

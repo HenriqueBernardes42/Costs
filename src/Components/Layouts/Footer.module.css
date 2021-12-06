@@ -1,0 +1,35 @@
+.Footer{
+    background-color: #222;
+    color:snow;
+    padding: 3em;
+    text-align: center;
+    
+}
+
+.Footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer ul li{
+    margin: 0 1em;
+}
+
+.Footer ul li:hover{
+    color: #ffbb33
+}
+
+.Footer ul svg{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.Copy{
+    margin-top: 2em;
+}
+
+.Copy span{
+    font-weight: bold;
+    color: #ffbb33;
+}
