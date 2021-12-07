@@ -1,13 +1,25 @@
-export default function ProjectForm(){
+import Input from "../form/Input"
+import Select from "../form/Select"
+import SubmitButton from "../form/SubmitButton"
+import style from "./Project.module.css"
+
+export default function ProjectForm({btntext}){
+
     return(
-        <section>
-            <div><input type="text" placeholder="insira o nome do projeto"/></div>
-            <div><input type="number" placeholder="insira o orçamento total"/></div>
-            <div>
-                <select name="category_id"/>
-                <option disabled>Selecione a categoria</option>
-            </div>
-            <div><input type="submit"   value="criar projeto"/></div>
-        </section>
+        <form className={style.form}>
+            <Input 
+            type="text" 
+            text="Nome do projeto"
+            name="name" 
+            placeholder="digite um nome" 
+            handleOnChange={() => (console.log("hello world"))} />
+            <Input 
+            type="number"
+            text="Orçamento do projeto"
+            name="budjet"
+            placeholder="insira o orçamento total" />
+            <Select name="category_id" text="selecione uma categoria" />
+            <SubmitButton text={btntext}/>
+        </form>
     )
 }
